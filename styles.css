@@ -1,9 +1,60 @@
+body{
+    overflow-y:hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
 .background {
+  position: absolute;
+  margin-top: 18%;
 }
 
 .background img {
-  height: 500px;
+  float: right;
   width: 100%;
-  opacity: 0.5;
-  object-fit: cover;
+  object-fit: fill;
+  opacity: 0.4;
+}
+
+.me img {
+  position: fixed;
+  margin-top: 5%;
+  left: 10%;
+  width: 20%;
+  object-fit: contain;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.intro {
+  top: 7%;
+  right: 10%;
+  position: fixed;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.intro .links li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.intro h1 {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.intro p, .intro li {
+  padding: 10px;
+}
+
+.intro li:hover {
+  border-bottom: 2px solid black;
+}
+
+.list {
+  position: fixed;
+  margin-top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
