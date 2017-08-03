@@ -1,11 +1,12 @@
 body{
     overflow-y:hidden;
     font-family: 'Raleway', sans-serif;
+    text-transform: lowercase;
 }
 
 .background {
   position: absolute;
-  margin-top: 18%;
+  margin-top: 180px;
 }
 
 .background img {
@@ -17,8 +18,8 @@ body{
 
 .me img {
   position: fixed;
-  margin-top: 5%;
-  left: 10%;
+  margin-top: 20px;
+  left: 100px;
   width: 20%;
   object-fit: contain;
   border: 5px solid white;
@@ -26,11 +27,10 @@ body{
 }
 
 .intro {
-  top: 7%;
-  right: 10%;
+  top: 20px;
+  right: 100px;
   position: fixed;
   text-align: center;
-  text-transform: lowercase;
 }
 
 .intro .links li {
@@ -51,10 +51,29 @@ body{
   border-bottom: 2px solid black;
 }
 
-.list {
+.list, .skills {
   position: fixed;
-  margin-top: 40%;
+  margin-top: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  font-size: 16px;
+  background: white;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+.list {
+  left: 20px;
+}
+
+.skills {
+  right: 20px;
+}
+
+.list h3, .skills h3 {
+  font-size: 20px;
+}
+
+.list li, .list h3, .skills li, .skills h3 {
+  padding-bottom: 10px;
 }
